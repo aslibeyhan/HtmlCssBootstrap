@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form ve Input</title>
+</head>
+<body>
+    <form>
+        <label for="name">Name</label><br>
+        <input type="text" id="name" name="name"><br>
+        <label for="email">Email</label><br>
+        <input type="email" id="email" name="email"><br>
+        <label for="password">Password</label><br>
+        <input type="password" id="password" name="password"><br>
+        <label for="date">Date</label><br>
+        <input type="date" id="date" name="date"><br>
+
+        Gender<br>
+        Male 
+        <input type="radio" name="gender" value="male">
+        Female
+        <input type="radio"  name="gender" value="female" checked>
+        Other
+        <input type="radio" name="gender" value="other"><br>
+ 
+        Hobbies<br>
+        Müzik
+        <input type="checkbox" name="music" value="music">
+        Teknoloji
+        <input type="checkbox" name="tech" value="tech" checked>
+        Sanat
+        <input type="checkbox" name="art" value="art"><br>
+
+        Degree<br>
+        <select name="degree" id="degree">
+          <option value="bachelor">Lisans</option>
+          <option value="msc" selected>Yüksek Lisans</option>
+          <option value="phd">Doktora</option>
+        </select>
+        <br>
+        <textarea name="message" id="message" rows="10" cols="30" placeholder="Your message"></textarea>
+        <br>
+        <button type="reset">Sifirla</button>
+        <input type="submit" value="Submit">
+    </form>
+    
+</body>
+</html>
+
+
+<!-- Html sayfalarinin en üst kisminda header alani vardir.Sonra sirasiyla 
+-> nav ->[{section - article} ->{aside}] ->ve en altta footer bulunur. -->
+
