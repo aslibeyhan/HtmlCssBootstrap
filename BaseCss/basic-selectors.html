@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Selector</title>
+
+    <link rel="stylesheet" href="./Css/style1.css"></link>
+    <link rel="stylesheet" href="./Css/style2.css"></link>
+    <style>
+    /* Css yukaridan aşagiya dogru çalişir.Asağida aynı özelliği etkileyen bir css varsa üsttekini ezer.
+    So genel seçiciler en üste özel seciciler altlara yazilmalidir.Eğer değişmesini istemezsen !important öz kull. 
+    opacity->bulanıklı değeri  .Bir web sayfasindaki hhangi bir rengi öğrenmek için colorZilla uyg kullbsin.Hexadecimal sayi
+    değer->#ffffff ile gösterilir.Background-color yerine sadece backgroun d ayazabşlirsin.cover ile içinde bulunduğu alanın hepsini kapsar*/
+
+
+        /* h1{
+            color: aliceblue;
+            background-color: black;
+        }
+
+        p{
+            color: brown;
+            background-color: whitesmoke;
+        } */
+
+        /* h1,p{
+            color: brown;
+            background-color: whitesmoke;
+        } */
+
+        /* #logo{
+            color: aliceblue;
+            background-color: brown;
+        } */
+
+        /* .class2{
+            color: burlywood;
+            background-color: darkgray;
+        } */
+
+        /* #logo,.class1{
+            color: black;
+            background-color: blueviolet;
+        } */
+
+        #demo.class1{
+            /* color:rgb(0, 0, 0); */
+            background-color: brown;
+            /* opacity: 0.8; */
+            color:rgba(0, 0, 0,0.4);
+
+        }
+
+        /* a{
+            text-decoration: none;
+        } */
+
+        ul li a {
+            text-decoration: none;
+        }
+
+        .class2 span{
+            color: blueviolet;
+        }
+
+        .class2 .primary{
+            color:red !important;
+        }
+
+        /* *{
+            font-size: 25px;
+        } */
+
+        /* .class2{
+            width:640px;
+            height: 360px;
+            background-image:url("images/2023-01-07\ \(1\).png");
+            background-size: cover;
+            color: white;
+        }  */
+        
+        .class1{
+            background-image:url("images/2023-01-07\ \(1\).png");
+            background-size: 100px;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Header1</h1>
+        <h1 id="logo">Logo</h1>
+        <ul>
+            <li>
+                <a href="#">Contanct</a>
+            </li>
+            <li>
+                <a href="#">Services</a>
+            </li>
+        </ul>
+    </header>
+    <h1>Header2</h1>
+    <p id="demo" class="class1">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Error rerum numquam itaque aliquid assumenda 
+        sit labore quibusdam iusto consequatur explicabo! Quibusdam iusto sed, dolorum est ad voluptas placeat iste enim.
+    </p>
+    <p class="class2">Lorem ipsum dolor <span class="primary">amet consectetur</span>  adipisicing elit. Libero quos voluptates ipsam officia sed aut magnam 
+        consequatur distinctio corporis nostrum?
+    </p>
+    <p class="class2">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+        Architecto quae<span>facere officia</span>  expedita magni dolore!
+
+    </p>
+    <p>Test Paragraph</p>
+    <a href="#">Home</a>
+</body>
+</html>

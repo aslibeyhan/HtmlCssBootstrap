@@ -1,0 +1,36 @@
+<!-- Inline elementler sadece contenti kadar yer kaplar.Inline elemts kendin weight ve height vereMEZsin.
+    <a></a> link bunlardam biridir.Hem w-h verebilmek hemde inline özell korumak için inlineblock öz kull .
+Sadece link basınca değil belli boyuta kadar alanda basılınca tıklanması kullanici verimliliğini arttırır.
+Css herşeyi kutu olarak düşünmelisin.Content->Padding->Border->Margin-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display</title>
+    <style>
+        .box{
+        width: 50%;
+        height: 100px;
+        }
+        .box11{
+            background: red;
+        }
+        .box22{
+            background: wheat;
+        }
+
+        #test-link{
+            display: inline-block;
+            width: 100px;
+            height: 100px;
+        }
+        
+    </style>
+</head>
+<body>
+    <a href="#" id="test-link">Test Link</a>
+    <!-- <div class="box box11"></div>
+    <div class="box box22"></div> -->
+</body>
+</html>
