@@ -1,0 +1,96 @@
+<!-- Fleks default olarak bir satıra tğm elemntleri sııgdırmaya calisir. flex-direction: column; yaparzan justfycontent dikeyde işlem görür
+    align items ise yatayda işlem görür durum row olursa tam tersine döner.
+YANİ JUSTİFYCONTENT BİZİM MAİN ACCSESS NEREDEYSE dikey-yatay ona göre hizalama yapar. 
+Not:Farklı ekranlara göre farklı tasarımlar yapılmasına "responsive tasarım denir.Css de bunları medşa querylerle yaprız"-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            width: 75%;
+            margin: 0 auto;
+            display: flex;
+            /* flex-wrap: wrap; */
+            /* flex-direction: column;
+            justify-content: space-around;
+            align-items: center; */
+            /* flex-direction: row;  */
+            /*justify-content: flex-start; 
+            align-items: flex-end;  */
+            min-height:600px;
+            background: black;
+            /* justify-content: center; */
+        }
+        .box{
+            text-align: center;
+            background: #f2f2f2;
+            width: 200px;
+            height: 200px;
+            margin: 10px;
+            border: 1px solid black;
+        }
+        .box1{
+            /* order: 3; */
+            background: red;
+            /* flex-grow: 2; */
+        }
+
+        .box2{
+            /* order: 1; */
+            background: blue;
+            /* align-self:flex-end; */
+            flex-grow: 1;
+        }
+        .box3{
+            /* order: 2; */
+            background: green;
+            /* flex-grow: 6; */
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="container"> 
+      <!-- <div class="box">
+       <h1>Article1</h1>
+       <p>Lorem ipsum dolor sit amet consectetur.</p>
+      </div>
+      <div class="box">
+        <h1>Article2</h1>
+        <p>Lorem ipsum dolor sit amet consectetur.</p>
+       </div>
+       <div class="box">
+        <h1>Article3</h1>
+        <p>Lorem ipsum dolor sit amet consectetur.</p>
+       </div> -->
+       <!-- <div class="box">
+        <h1>Article3</h1>
+        <p>Lorem ipsum dolor sit amet consectetur.</p>
+       </div>
+       <div class="box">
+        <h1>Article3</h1>
+        <p>Lorem ipsum dolor sit amet consectetur.</p>
+       </div>
+       <div class="box">
+        <h1>Article3</h1>
+        <p>Lorem ipsum dolor sit amet consectetur.</p>
+       </div>
+       <div class="box">
+        <h1>Article3</h1>
+        <p>Lorem ipsum dolor sit amet consectetur.</p>
+       </div> -->
+
+       <div class="box box1"></div>
+       <div class="box box2"></div>
+       <div class="box box3"></div>
+    </div>
+</body>
+</html>
