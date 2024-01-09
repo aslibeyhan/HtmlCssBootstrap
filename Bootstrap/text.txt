@@ -1,0 +1,5 @@
+Bootstrap mobile firs çalışan ve responsive bir şekilde layoutlarımızı oluşturmamızı sağlayan çok kapsamlı bir CSS kütüphanesidir.
+Bootstrap gelen özellikleri kendi css lerinle özelleştirebilirsin.
+Bootstrap ile beraber artık mobil responsive yapmak için @media ayrıca yazmamıza gerek yok zaten içerisinde var .
+Bootstrap de grid sistem vardır.Bir sayfayı 12 eş parçaya ayırır.
+Büyük projelerde grid sistemi kullken küçük box veya image için Bootstrap->utilities->flexbox da kullbsin.
