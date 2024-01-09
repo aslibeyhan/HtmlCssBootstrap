@@ -1,0 +1,86 @@
+<!-- Bir proje yaparken responsive yapmaya özen göstermeliyiz.Aksi halde ilerleyen süreçlerde yeni özellikler eklendikçe karmaşıklık da artar. -->
+<!-- Responsive Units:
+ -em -rem -% -vw -vh  -->
+<!-- Viewport tarayicida gördüğün tüm alan yatay genis vw , dikey vh dir. -->
+<!-- Farklı resimler indirmek için pexels.com sitesini kullbsin. -->
+ <!-- em->parent elementine göre boyut belirlerken rem->html elementine göre belirler. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Units</title>
+    <style>
+        /*html{
+            /* font-size: 10px; */
+            /* font-size: 20px; */
+        /* }
+        /* div{
+            font-size: 1.5em;
+        } */
+        /* p{
+            /* font-size: 1.5em; */
+            /* padding:1.5em;  burada div göre değil p elementine göre boyut alir */
+            /* font-size: 50%;
+         } */
+        
+
+         *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* div{
+            width: 40vw;
+            height: 10vh;
+            background: black;
+        } */
+
+       
+        .background{
+            background: url("./images/pexels-the-cactusena-18148613.jpg") center center no-repeat;
+            background-size: cover;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            color:black;
+            align-items: center;
+            padding: 10rem;
+        }
+
+        h1{
+            margin-bottom: 1rem;
+            font-size: 3rem;
+        }
+
+        p{
+            font-size: 2rem;
+            letter-spacing: 2px;
+        }
+
+        @media(max-width:500px){
+            h1{
+                margin-bottom: 0.5rem;
+                font-size: 2rem;
+            }
+
+            p{
+                font-size: 1rem;
+                /* görünmez paragraf */
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- <div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, aut?</p>
+    </div> -->
+    <div class="background">
+        <h1>Welcome To The Site</h1>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloremque, eos.</p>
+    </div>
+</body>
+</html>
